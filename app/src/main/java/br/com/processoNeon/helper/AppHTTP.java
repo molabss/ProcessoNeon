@@ -1,8 +1,5 @@
 package br.com.processoNeon.helper;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -15,9 +12,15 @@ import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import br.com.processoNeon.model.ContactHistory;
 
 /**
  * Created by moises_santana on 19/05/2015.
@@ -90,7 +93,7 @@ public class AppHTTP {
 
 
     public <T> T connectTestNeon(String method, String url,Map<String,String> params) throws IOException {
-        Type listType = new TypeToken<List<T>>() {}.getType();
+        Type listType = new TypeToken<List<ContactHistory>>() {}.getType();
         return new Gson().fromJson(request(method,url,params,null), listType);
     }
 
