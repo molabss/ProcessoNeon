@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Processo Neon</string>
+    <string name="userName">Moisés Santana</string>
+    <string name="defMobile">(11) 99999.9999</string>
+    <string name="defMoney">R$ 0,00</string>
+    <string name="email">ijkmoises@gmail.com</string>
+    <string name="sendMoney">Enviar Dinheiro</string>
+    <string name="send">Enviar</string>
+    <string name="valToSend">Valor a enviar:</string>
+    <string name="showHistory">Histórico de Envios</string>
+    <string name="title_activity_send_money">SendMoneyActivity</string>
+    <string name="title_activity_show_history">ShowHistoryActivity</string>
+    <string name="title_activity_value_popup">ValuePopupActivity</string>
+    <string name="wait">Aguarde...</string>
+    <string name="working">Em andamento...</string>
+    <string name="successSendValue">O Valor foi enviado com sucesso!</string>
+    <string name="failSendValue">Não foi possível enviar o valor. Por favor, tente novamente.</string>
+    <string name="warning">"Atenção"</string>
+    <string name="sendingValue">Enviando valor...</string>
+    <string name="errorGetHistory">Não foi possível obter o histórico</string>
+    <string name="titleSendMoney">ENVIAR DINHEIRO</string>
+    <string name="sendHistory">HISTÓRICO DE ENVIOS</string>
+</resources>
