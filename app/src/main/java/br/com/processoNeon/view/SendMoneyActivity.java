@@ -50,13 +50,13 @@ public class SendMoneyActivity extends AppCompatActivity {
 
         ContactsAdapter cAdapter = new ContactsAdapter(this,contactList);
 
-        mRvListContacts.addOnItemTouchListener(
-                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override public void onItemClick(View view, int position) {
-                        startActivity(new Intent(SendMoneyActivity.this,ValuePopupActivity.class).putExtra("contact",contactList.get(position)));
-                    }
-                })
-        );
+//        mRvListContacts.addOnItemTouchListener(
+//                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
+//                    @Override public void onItemClick(View view, int position) {
+//                        startActivity(new Intent(SendMoneyActivity.this,ValuePopupActivity.class).putExtra("contact",contactList.get(position)));
+//                    }
+//                })
+//        );
         mRvListContacts.setAdapter(cAdapter);
         mRvListContacts.setItemAnimator(new DefaultItemAnimator());
     }

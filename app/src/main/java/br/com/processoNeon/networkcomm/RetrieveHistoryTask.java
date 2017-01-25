@@ -23,6 +23,8 @@ import br.com.processoNeon.model.ContactHistory;
 
 public class RetrieveHistoryTask  extends Task{
 
+
+
     private NeonRESTParamsWrapper mWrapper;
     public List<ContactHistory> listHist;
 
@@ -31,6 +33,7 @@ public class RetrieveHistoryTask  extends Task{
     }
 
     public class GetHistory extends AsyncTask<Object, String, List<ContactHistory>>{
+
         public AsyncResponse delegate = null;
 
         @Override
